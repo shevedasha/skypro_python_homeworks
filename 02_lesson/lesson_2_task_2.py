@@ -1,5 +1,5 @@
 def is_yesr_leap(year):
-    if (year % 4 == 0):
+    if year % 4 == 0:
         print("Year: " + str(year) + " True")
     else:
         print("Year: " + str(year) + " False")
