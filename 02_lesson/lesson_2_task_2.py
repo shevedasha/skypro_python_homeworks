@@ -3,5 +3,6 @@ def is_yesr_leap(year):
         print("Year: " + str(year) + " True")
     else:
         print("Year: " + str(year) + " False")
-is_yesr_leap(int(input("Введите год: ")))
 
+
+is_yesr_leap(int(input("Введите год: ")))
