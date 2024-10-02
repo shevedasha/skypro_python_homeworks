@@ -8,7 +8,7 @@ wait = WebDriverWait(driver, 40, 0.3)
 
 try:
     driver.get("http://uitestingplayground.com/ajax")
-    button = driver.find_element(By.CSS_SELECTOR, "#ajaxButton").click()
+    driver.find_element(By.CSS_SELECTOR, "#ajaxButton").click()
     text_1 = wait.until(EC.visibility_of_element_located(
         (By.CSS_SELECTOR, ".bg-success"))).text
     print(text_1)

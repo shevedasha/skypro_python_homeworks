@@ -5,10 +5,10 @@ driver = webdriver.Chrome()
 
 try:
     driver.get("http://uitestingplayground.com/textinput")
-    MyBatton = driver.find_element(By.CSS_SELECTOR, "#newButtonName").send_keys("SkyPro")
-    BlueButton = driver.find_element(By.CSS_SELECTOR, "#updatingButton").click()
-    NewButton = driver.find_element(By.CSS_SELECTOR, "#updatingButton").text
-    print(NewButton)
+    driver.find_element(By.CSS_SELECTOR, "#newButtonName").send_keys("SkyPro")
+    driver.find_element(By.CSS_SELECTOR, "#updatingButton").click()
+    new_button = driver.find_element(By.CSS_SELECTOR, "#updatingButton").text
+    print(new_button)
 
 except Exception as ex:
     print(ex)
