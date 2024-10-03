@@ -5,6 +5,7 @@ from selenium.webdriver.common.keys import Keys
 
 driver = webdriver.Chrome()
 
+driver.implicitly_wait(10) 
 driver.get("https://www.saucedemo.com/")
 driver.maximize_window
 

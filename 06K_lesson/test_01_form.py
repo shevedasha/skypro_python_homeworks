@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 
 driver = webdriver.Chrome()
 
+driver.implicitly_wait(10) 
 driver.get("https://bonigarcia.dev/selenium-webdriver-java/data-types.html")
 
 element_1 = driver.find_element(By.CSS_SELECTOR, "input[name=first-name]")
@@ -47,7 +48,7 @@ def test_1():
 
 
 def test_2():
-    color = element_1_color and element_2_color and element_3_color and element_5_color and element_6_color and element_7_color and element_8_color and element_9_color and element_10_color
+    color = [element_1_color, element_2_color, element_3_color, element_5_color, element_6_color, element_7_color, element_8_color, element_9_color, element_10_color]
     assert color == "rgba(15, 81, 50, 1)"
 
 
