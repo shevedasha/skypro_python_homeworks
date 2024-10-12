@@ -42,23 +42,4 @@ def test_task1():
     color = [first, last, address, city, country, email, phone, job, company]
     assert color == "rgba(15, 81, 50, 1)"
 
-
-
-
-
-
-
-
-
-
-    # color = element_4_color
-    # assert color == "rgba(132, 32, 41, 1)"
-
-
-# def test_2():
-
-#     color = [element_1_color, element_2_color, element_3_color, element_5_color, element_6_color, element_7_color, element_8_color, element_9_color, element_10_color]
-#     assert color == "rgba(15, 81, 50, 1)"
-
-
-# driver.quit()
+    driver.quit()

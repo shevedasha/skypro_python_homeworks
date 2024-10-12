@@ -1,4 +1,3 @@
-from time import sleep
 import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -30,8 +29,6 @@ def test_task_3():
     prod.last_name("Sheveleva")
     prod.post_code("620000")
     prod.confirm()
-
-    sleep (20)
 
     total = Total(driver)
     price = total.total_price()
