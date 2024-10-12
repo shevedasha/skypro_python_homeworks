@@ -40,6 +40,7 @@ def test_task1():
     assert zip_code == "rgba(132, 32, 41, 1)"
 
     color = [first, last, address, city, country, email, phone, job, company]
-    assert color == "rgba(15, 81, 50, 1)"
+    for c in color:
+        assert c == "rgba(15, 81, 50, 1)"
 
     driver.quit()
