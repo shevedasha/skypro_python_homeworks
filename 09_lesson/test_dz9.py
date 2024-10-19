@@ -41,7 +41,6 @@ def test_update():
 
 assert rows["subject_title"] == "Alchemy2"
 
-
 def test_delete():
 
     db = create_engine(db_connection_string)
